@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Web.config" />
     <Content Include="wfComponente1.aspx" />
+    <Content Include="wfTabuada.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,6 +79,13 @@
     </Compile>
     <Compile Include="wfComponente1.aspx.designer.cs">
       <DependentUpon>wfComponente1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfTabuada.aspx.cs">
+      <DependentUpon>wfTabuada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfTabuada.aspx.designer.cs">
+      <DependentUpon>wfTabuada.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

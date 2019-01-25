@@ -58,6 +58,15 @@ namespace WA_Aula02 {
         protected global::System.Web.UI.WebControls.Button selecionar;
         
         /// <summary>
+        /// Controle ddEndereco.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox ddEndereco;
+        
+        /// <summary>
         /// Controle ddSite.
         /// </summary>
         /// <remarks>
@@ -67,12 +76,12 @@ namespace WA_Aula02 {
         protected global::System.Web.UI.WebControls.DropDownList ddSite;
         
         /// <summary>
-        /// Controle ddEndereco.
+        /// Controle literal_confirm.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ddEndereco;
+        protected global::System.Web.UI.WebControls.Literal literal_confirm;
     }
 }

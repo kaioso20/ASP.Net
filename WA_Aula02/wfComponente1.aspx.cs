@@ -18,18 +18,16 @@ namespace WA_Aula02
         {
             try
             {
-                //ddSite.Items.Add(txtSite.Text);
-                ListItem ItemsSite = new ListItem(txtSite.Text, ddSite.Items.Count.ToString());
-                ddSite.Items.Add(ItemsSite);
-                txtSite.Text = "";
+                ListItem ItemsSite = new ListItem(txtSite.ToString(),txtEndereco.ToString());
+                ddEndereco.Items.Add(ItemsSite);
+                literal_confirm.Text = "<div class='btn btn-success'>Cadastro do site " + txtSite.Text + " realizado com sucesso</div>";
 
-                ListItem ItemsEndereco = new ListItem(txtEndereco.Text, ddSite.Items.Count.ToString());
-                ddEndereco.Items.Add(ItemsEndereco);
+                txtSite.Text = "";
                 txtEndereco.Text = "";
             }
             catch (Exception)
             {
-                throw;
+                literal_confirm.Text = "<div class='btn btn-danger'>Problemas ao cadastrar</div>";
             }
         }
 
