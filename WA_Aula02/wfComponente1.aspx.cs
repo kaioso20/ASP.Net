@@ -18,7 +18,7 @@ namespace WA_Aula02
         {
             try
             {
-                ListItem ItemsSite = new ListItem(txtSite.ToString(),txtEndereco.ToString());
+                ListItem ItemsSite = new ListItem(txtSite.Text,txtEndereco.Text);
                 ddEndereco.Items.Add(ItemsSite);
                 literal_confirm.Text = "<div class='btn btn-success'>Cadastro do site " + txtSite.Text + " realizado com sucesso</div>";
 
@@ -33,10 +33,18 @@ namespace WA_Aula02
 
         protected void btn_selecionar_Click(object sender, EventArgs e)
         {
-            ListItem itemEnd = ddEndereco.SelectedItem;
-            txtEndereco.Text = itemEnd.Text;
-            ListItem itemsite = ddSite.SelectedItem;
-            txtSite.Text = itemsite.Text;
+            try
+            {
+                ListItem itemEnd = ddEndereco.SelectedItem;
+                txtEndereco.Text = itemEnd.Text;
+                ListItem itemsite = ddSite.SelectedItem;
+                txtSite.Text = itemsite.Text;
+            }
+            catch (Exception)
+            {
+
+                literal_confirm.Text = "<div class='btn btn-danger'>Problemas ao Selecionar</div>";
+            }
         }
     }
 }
