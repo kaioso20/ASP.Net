@@ -35,12 +35,13 @@
                         <asp:ListBox ID="ddEndereco" runat="server" CssClass="form-control" SelectionMode="Multiple"></asp:ListBox>
                     </td>
                     <td class="col-sm-2">
-                        <asp:DropDownList ID="ddSite" runat="server" CssClass="form-control">
-                        </asp:DropDownList>
+                        <asp:DropDownList ID='ddSite' runat='server' CssClass='form-control'></asp:DropDownList>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="5"><asp:Literal ID="literal_confirm" runat="server"></asp:Literal></td>
+                    <td colspan="5">
+                        <asp:Literal ID="literal_confirm" runat="server"></asp:Literal>
+                    </td>
                 </tr>
             </table>
         </div>
